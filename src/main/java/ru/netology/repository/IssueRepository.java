@@ -20,6 +20,7 @@ public class IssueRepository {
         for (Issue issue : issues) {
             if (issue.getId() == id) {
                 issue.setOpen(status);
+                return;
             }
         }
     }
